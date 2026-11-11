@@ -1,7 +1,7 @@
 import {test} from "@playwright/test"
 
 test("combo", async({page})=>{
-    await page.goto('https://demoapps.qspiders.com/ui?sc')
+    await page.goto('https://demoapps.qspiders.com/')
 
     await page.locator('#name').click()
     await page.keyboard.type("Teddy Bear", {delay: 600})
